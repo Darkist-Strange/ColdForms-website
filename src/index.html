@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColdForms</title>
+  <style>
+    /* Inline CSS for simplicity */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .fullscreen-image {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #007BFF;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0056b3;
+    }
+
+    nav a.app-link {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+    }
+
+    nav a.app-link:hover {
+      background-color: #0056b3;
+    }
+
+    .hero-buttons button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero-buttons .primary {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .hero-buttons .primary:hover {
+      background-color: #0056b3;
+    }
+
+    .hero-buttons .secondary {
+      background-color: white;
+      border: 2px solid #007BFF;
+      color: #007BFF;
+    }
+
+    .hero-buttons .secondary:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .secondary-app-entry {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .secondary-app-entry a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .secondary-app-entry a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="/login">Sign In</a>
+    <a href="https://app.coldforms.com" class="app-link">Open App</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="fullscreen-image">
+    <div class="overlay">
+      <h1>Welcome to ColdForms</h1>
+      <div class="hero-buttons">
+        <button class="primary">Get Started</button>
+        <button class="secondary">View Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="products">
+      <h2>Our Products</h2>
+      <p>Explore our innovative solutions.</p>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Learn more about ColdForms and our mission.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for more information.</p>
+    </section>
+
+    <!-- Secondary App Entry -->
+    <section class="secondary-app-entry">
+      <p>Already using ColdForms?</p>
+      <a href="https://app.coldforms.com">Go to the app →</a>
+    </section>
+  </main>
+</body>
+</html>
