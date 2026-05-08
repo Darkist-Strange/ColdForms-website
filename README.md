@@ -1,6 +1,5 @@
-# JaeLabs
 
-JaeLabs is a web project designed to showcase a modern and interactive website. This project includes a structured layout with HTML, CSS for styling, and JavaScript for dynamic functionality.
+
 
 ## Project Structure
 
