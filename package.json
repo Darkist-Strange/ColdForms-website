@@ -1,21 +1,11 @@
 {
-  "name": "jaelabs",
+  "name": "coldforms-website",
   "version": "1.0.0",
-  "description": "A website project for JaeLabs.",
-  "main": "src/index.html",
+  "private": true,
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'Build step not defined'",
-    "test": "echo 'Test step not defined'"
+    "start": "live-server src --port=8080 --host=127.0.0.1"
   },
-  "keywords": [
-    "website",
-    "jaelabs"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.2"
   }
 }
