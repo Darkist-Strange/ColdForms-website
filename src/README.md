@@ -10,7 +10,7 @@ This is a static website based on the supplied ColdForms landing page direction.
 
 ## Replace before launch
 
-1. Replace `href="#"` in the App Store and Google Play buttons with your real store links.
+1. Replace `href="#"` in the App Store button with your real store link.
 2. Replace the CSS mockups with real app screenshots or video/GIF embeds when ready.
 3. Update pricing if regional pricing changes.
 4. Add your privacy policy, terms, and support links in the footer when ready.

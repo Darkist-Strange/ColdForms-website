@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <header class="site-header">
@@ -48,10 +48,6 @@
             <span class="store-icon"></span>
             <span><small>Download on the</small><strong>App Store</strong></span>
           </a>
-          <a class="store-button" href="#" aria-label="Get it on Google Play">
-            <span class="play-icon"></span>
-            <span><small>GET IT ON</small><strong>Google Play</strong></span>
-          </a>
         </div>
 
         <div class="trust-row">
@@ -80,12 +76,7 @@
 
         <div class="laptop-mockup floating-back">
           <div class="screen">
-            <h3>Submissions</h3>
-            <div class="submission-row"><span>Site Inspection Report</span><b>Completed</b></div>
-            <div class="submission-row"><span>Warehouse Audit</span><b>Completed</b></div>
-            <div class="submission-row"><span>Safety Checklist</span><b>Completed</b></div>
-            <div class="submission-row"><span>Daily Report</span><b>Completed</b></div>
-            <div class="submission-row"><span>Equipment Log</span><b>Completed</b></div>
+            <img src="assets/coldforms-dashboard.png" alt="ColdForms forms dashboard showing a library of form templates" />
           </div>
           <div class="base"></div>
         </div>
@@ -94,16 +85,23 @@
 
     <section class="feature-stage section-shell" id="features">
       <div class="feature-layout">
-        <aside class="feature-menu" aria-label="Feature spotlight menu">
+        <aside class="feature-menu" aria-label="ColdForms workflow menu">
           <button class="active" data-feature="a4">▣ A4 Builder</button>
           <button data-feature="cards">▧ Card Builder</button>
-          <button data-feature="logic">✣ Logic</button>
-          <button data-feature="offline">● Offline Only</button>
-          <button data-feature="chips">✿ Chip System</button>
-          <button data-feature="forms">▤ Form in Forms</button>
+          <button data-feature="capture">◎ Capture</button>
+          <button data-feature="responses">▤ Responses</button>
+          <button data-feature="export">↗ Export</button>
           <button data-feature="roadmap">⌁ Roadmap</button>
-          <button data-feature="about">⌂ About Us</button>
         </aside>
+
+        <nav class="feature-tabs" aria-label="Advanced ColdForms features">
+          <button data-feature="formulas">Formulas</button>
+          <button data-feature="chips">Chips</button>
+          <button data-feature="validation-settings">Validation Settings</button>
+          <button data-feature="if-statements">UI If Statements</button>
+          <button data-feature="document-id">Document ID Widget</button>
+          <button data-feature="chart-builder">Custom Chart Builder</button>
+        </nav>
 
         <div class="spotlight-copy">
           <p class="section-kicker">Feature spotlight</p>
@@ -116,7 +114,7 @@
           </ul>
           <div class="carousel-controls">
             <button class="circle-btn" id="prev-feature" aria-label="Previous feature">←</button>
-            <strong><span id="feature-count">01</span> / 08</strong>
+            <strong><span id="feature-count">01</span> / <span id="feature-total">12</span></strong>
             <button class="circle-btn primary" id="next-feature" aria-label="Next feature">→</button>
           </div>
         </div>
@@ -148,7 +146,54 @@
       </div>
     </section>
 
-    <section class="paperwork section-shell" id="templates">
+    <section class="sample-carousel section-shell" id="templates">
+      <div class="sample-carousel-shell">
+        <nav class="sample-tabs" aria-label="Sample form templates">
+          <button class="active" data-sample="onboarding">Employee Onboarding</button>
+          <button data-sample="flha">Field Level Hazard Assessment (FLHA)</button>
+          <button data-sample="invoice">Invoice</button>
+        </nav>
+
+        <div class="sample-showcase">
+          <div class="sample-copy">
+            <p class="section-kicker orange">Form samples</p>
+            <h2 id="sample-title">Employee Onboarding</h2>
+            <p id="sample-body">Welcome new team members with one organized form for the information every first day needs.</p>
+            <ul id="sample-list">
+              <li>Personal and contact details</li>
+              <li>Role and start-date information</li>
+              <li>Policy acknowledgements</li>
+            </ul>
+            <div class="carousel-controls">
+              <button class="circle-btn" id="prev-sample" aria-label="Previous form sample">←</button>
+              <strong><span id="sample-count">01</span> / <span id="sample-total">03</span></strong>
+              <button class="circle-btn primary" id="next-sample" aria-label="Next form sample">→</button>
+            </div>
+          </div>
+
+          <div class="sample-visual" id="sample-visual" data-sample-preview="onboarding" aria-live="polite">
+            <article class="sample-paper">
+              <header class="sample-paper-header">
+                <div>
+                  <small>COLD FORMS</small>
+                  <h3 id="sample-document-title">EMPLOYEE ONBOARDING</h3>
+                </div>
+                <strong id="sample-document-code">HR</strong>
+              </header>
+              <div class="sample-fields" id="sample-fields">
+                <div><span>Employee name</span><i></i></div>
+                <div><span>Start date</span><i></i></div>
+                <div><span>Department</span><i></i></div>
+                <div><span>Emergency contact</span><i></i></div>
+              </div>
+              <footer class="sample-paper-footer"><span></span><span></span><span></span></footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paperwork section-shell" id="workflows">
       <p class="section-kicker orange">Built for real work</p>
       <h2>Built for real paperwork.</h2>
       <p>ColdForms gives you the power to build smarter forms that work the way you do—online or offline.</p>
@@ -190,6 +235,6 @@
     <p>Offline-first. Private. Powerful.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
