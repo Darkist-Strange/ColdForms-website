@@ -112,22 +112,12 @@ button { font: inherit; }
 .store-icon { font-size: 34px; }
 .trust-row { display: flex; flex-wrap: wrap; gap: 24px; color: #546073; font-size: 14px; font-weight: 650; }
 
-.hero-product { position: relative; min-height: 420px; }
+.hero-product { position: relative; min-height: 470px; }
 .tablet-mockup, .laptop-mockup { position: absolute; background: #05070b; border-radius: 26px; box-shadow: var(--shadow); }
-.tablet-mockup { left: 3%; top: 0; width: 52%; min-width: 440px; padding: 18px; z-index: 3; }
-.mock-toolbar { height: 34px; display: flex; align-items: center; gap: 18px; color: #8b95a8; font-size: 11px; background: #fff; border-radius: 14px 14px 0 0; padding: 0 14px; }
-.mock-toolbar button { margin-left: auto; border: 0; background: var(--brand-deep); color: #fff; border-radius: 8px; padding: 5px 12px; }
-.builder-preview { display: grid; grid-template-columns: 92px 1fr; height: 290px; background: #dce2eb; border-radius: 0 0 14px 14px; overflow: hidden; }
-.builder-preview aside { display: grid; gap: 0; background: #fff; border-right: 1px solid var(--line); padding: 8px; }
-.builder-preview aside span { display: flex; align-items: center; border-bottom: 1px solid #edf0f5; font-size: 10px; color: #475467; }
-.paper-preview { margin: 24px auto; padding: 22px; width: 74%; background: #fff; border-radius: 5px; box-shadow: 0 10px 28px rgba(16,24,40,.12); }
-.paper-preview h3 { text-align: center; margin: 0 0 20px; font-size: 15px; }
-.paper-preview label { display: block; font-size: 10px; color: #667085; margin: 10px 0 5px; }
-.input-line { height: 24px; border: 1px solid #d8dee9; border-radius: 7px; }
-.input-line.short { width: 70%; }
-.radio-row { display: flex; gap: 24px; margin-top: 18px; }
-.radio-row i { width: 12px; height: 12px; border: 2px solid #c7d1e1; border-radius: 50%; }
-.laptop-mockup { right: 0; top: 48px; width: 48%; min-width: 440px; padding: 14px 14px 0; z-index: 1; }
+.tablet-mockup { left: 0; top: 0; width: min(64%, 620px); min-width: 500px; padding: 14px; z-index: 3; }
+.tablet-mockup .screen { aspect-ratio: 4 / 3; background: #fff; border-radius: 14px; overflow: hidden; }
+.tablet-mockup .screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.laptop-mockup { right: 0; top: 72px; width: 48%; min-width: 440px; padding: 14px 14px 0; z-index: 1; }
 .laptop-mockup .screen { aspect-ratio: 1.6; background: #fff; border-radius: 8px; overflow: hidden; }
 .laptop-mockup .screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .laptop-mockup .base { height: 12px; width: 110%; margin-left: -5%; background: linear-gradient(#202530,#05070b); border-radius: 0 0 50% 50%; }
